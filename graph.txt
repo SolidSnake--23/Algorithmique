@@ -1,0 +1,8 @@
+5 // nombre de sommets
+-550 -350 400 300 200 // le vecteur des poids
+0 2 5 // un arc avec son co^ut
+0 3 6 // un arc avec son co^ut
+0 4 3 // un arc avec son co^ut
+1 2 3 // un arc avec son co^ut
+1 3 5 // un arc avec son co^u
+1 4 4 // un arc avec son co^ut
