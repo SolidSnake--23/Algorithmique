@@ -21,16 +21,12 @@ public class DisplaySommet extends JComponent implements MouseListener {
 	private static Color clickColor = Color.RED;
 	private Color color = defaultColor;
 
-	public DisplaySommet( Node sommet, Dimension range ) throws IllegalArgumentException {
+	public DisplaySommet( Node sommet) throws IllegalArgumentException {
 		if ( sommet == null ) {
 			throw new IllegalArgumentException( "Impossible d'afficher un sommet null." );
 		}
 		this.sommet = sommet;
-		Random rand = new Random();
-		setLocation( new Point(
-			rand.nextInt( range.width ),
-			rand.nextInt( range.height )
-		) );
+		
 		addMouseListener( this );
 	}
 
