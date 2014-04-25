@@ -45,7 +45,7 @@ public class DisplaySwing extends JFrame implements ActionListener {
 		Label label = new Label( "Pour commencer, veuillez ouvrir un nouveau graphe." );
 		label.setAlignment( Label.CENTER );
 		home.add( label, BorderLayout.CENTER );
-		home.add(new DisplaySommet(new Node(400)));
+		/*home.add(new DisplaySommet(new Node(400)));*/
 
 		Dimension dimension = getSize();
 
@@ -92,17 +92,17 @@ public class DisplaySwing extends JFrame implements ActionListener {
 				System.exit( 0 );
 			}
 		});
-		// Création du menu déroulant "Fichier"
+		// Cr��ation du menu d��roulant "Fichier"
 		menuFichier.add( openGraph );
 		menuFichier.add( saveGraph );
 		menuFichier.add( closeGraph );
 		menuFichier.addSeparator();
 		menuFichier.add( exit );
 
-		// Ajout du menu déroulant à la bare de mneu
+		// Ajout du menu d��roulant �� la bare de mneu
 		menu.add( menuFichier );
 
-		// Ajout des menus à la fenêtre
+		// Ajout des menus �� la fen��tre
 		setJMenuBar( menu );
 	}
 	

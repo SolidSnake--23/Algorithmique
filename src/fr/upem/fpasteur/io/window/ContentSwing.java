@@ -11,8 +11,6 @@ import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 import fr.upem.fpasteur.graph.Arc;
 import fr.upem.fpasteur.graph.Graph;
 import fr.upem.fpasteur.graph.Node;
@@ -62,7 +60,7 @@ public class ContentSwing extends Container implements MouseMotionListener {
 				return (DisplaySommet) component;
 			}
 		}
-		throw new IllegalArgumentException( "Le sommet n'a pas encore �t� enregistr�." );
+		throw new IllegalArgumentException( "Le sommet n'a pas encore ete enregistre." );
 	}
 
 	private void paintArcs(
