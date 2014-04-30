@@ -32,7 +32,7 @@ public class File {
 			scanner.nextLine();
 			
 			for (i = 0; i < graph.getNbNode(); i++) {
-				graph.addNode(new Node(scanner.nextInt(), i));
+				graph.addNode(new Node(scanner.nextInt(), i+1));
 			}
 			
 			scanner.nextLine();

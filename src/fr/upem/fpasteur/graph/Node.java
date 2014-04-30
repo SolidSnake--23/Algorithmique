@@ -11,13 +11,13 @@ public class Node {
 	
 	public Node(int value) {
 		this.value = value;
-		this.setName("Node");
+		this.setName("Node "+value);
 		this.arcs = new ArrayList<Arc>();
 	}
 	
 	public Node(int value, int name) {
 		this(value);
-		this.setName("Node "+name);
+		this.setName(""+name);
 	}
 
 	public void addArc(Arc arc) {
